@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Learn Enough JavaScript</title>
+    <style>
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100px;
+            color: #fff;
+            text-shadow: 0px 0px 11px #333333;
+            margin: 0;
+            padding: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello, Wild World.</h1>
+    <h2>Random<br/>Color<br/>Generator</h2>
     <p>This page includes an alert written in JavaScript,</p>
+    <script src = "./lib/js/challenges/randomColor.js"></script>
     <script>
-        alert('Welcome to Learn Enough JavaScript!');
+        // alert('Welcome to Learn Enough JavaScript!');
+        let bodyElement = document.querySelector("body");
+        bodyElement.style.backgroundColor = getRandomColor();
     </script>
 </body>
 </html>
